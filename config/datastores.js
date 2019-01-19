@@ -52,6 +52,10 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 
   },
+  mlab: {
+    adapter: 'sails-mongo',
+    url: `mongodb://${process.env.dbuser}:${process.env.dbpassword}@ds261114.mlab.com:61114/backbone-sails`
+  }
 
 
 };
