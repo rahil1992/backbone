@@ -15,6 +15,14 @@ module.exports = {
     name: {
       type: 'string',
       required: true
+    },
+    contact: {
+      type: 'string',
+      required: true
+    },
+    department: {
+      type: 'string',
+      required: true
     }
   },
   exits: {
