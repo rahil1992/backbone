@@ -23,6 +23,12 @@ module.exports = {
     name: {
       type: 'string',
     },
+    contact: {
+      type: 'string'
+    },
+    department: {
+      model: 'Department'
+    }
 
 
 
