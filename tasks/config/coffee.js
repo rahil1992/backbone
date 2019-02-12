@@ -3,7 +3,7 @@
  *
  * ---------------------------------------------------------------
  *
- * Compile CoffeeScript files located in `assets/js` into Javascript
+ * Compile CoffeeScript files located in `fixtures/js` into Javascript
  * and generate new `.js` files in `.tmp/public/js`.
  *
  * For more information, see:
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: 'assets/js/',
+        cwd: 'fixtures/js/',
         src: ['**/*.coffee'],
         dest: '.tmp/public/js/',
         ext: '.js'

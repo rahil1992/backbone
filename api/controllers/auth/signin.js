@@ -29,7 +29,7 @@ module.exports= {
         if(!response) return exits.fails("User Not Exist");
         if(response.password !== inputs.password) return exits.fails("Invalid Password");
         delete response.password;
-        response.token ='Bearer '+ await sails.helpers.signToken({id: response.id});
+        response.token = await sails.helpers.signToken({id: response.id});
         return exits.success(response)
       })
   }

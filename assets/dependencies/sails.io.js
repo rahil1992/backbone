@@ -406,7 +406,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * Basically just a wrapper around `console.log` with
      * support for feature-detection.
      *
-     * @api private
+     * @integration private
      * @factory
      */
     function LoggerFactory(options) {
@@ -457,7 +457,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * i.e. so you don't have to wait for the socket to be connected
      * to start trying to  synchronize data.
      *
-     * @api private
+     * @integration private
      * @param  {SailsSocket}  socket
      */
 
@@ -539,7 +539,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
     /**
      * The JWR (JSON WebSocket Response) received from a Sails server.
      *
-     * @api public
+     * @integration public
      * @param  {Object}  responseCtx
      *         => :body
      *         => :statusCode
@@ -602,7 +602,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
     //
 
     /**
-     * @api private
+     * @integration private
      * @param  {SailsSocket} socket  [description]
      * @param  {Object} requestCtx [description]
      */
@@ -663,7 +663,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * WHICH SERVER to talk to yet, etc.  It is also used by `io.socket` for your convenience.
      *
      * @constructor
-     * @api private
+     * @integration private
      *
      * ----------------------------------------------------------------------
      * Note: This constructor should not be used directly. To obtain a `SailsSocket`
@@ -741,7 +741,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      *
      * Begin connecting this socket to the server.
      *
-     * @api private
+     * @integration private
      */
     SailsSocket.prototype._connect = function (){
       var self = this;
@@ -1066,7 +1066,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
     /**
      * Reconnect the underlying socket.
      *
-     * @api public
+     * @integration public
      */
     SailsSocket.prototype.reconnect = function (){
       if (this._isConnecting) {
@@ -1081,7 +1081,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
     /**
      * Disconnect the underlying socket.
      *
-     * @api public
+     * @integration public
      */
     SailsSocket.prototype.disconnect = function (){
       this._isConnecting = false;
@@ -1235,7 +1235,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * e.g.
      *    `socket.get('/user/3', Stats.populate)`
      *
-     * @api public
+     * @integration public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @param {Function} cb   ::    callback function to call when finished [optional]
@@ -1263,7 +1263,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * e.g.
      *    `socket.post('/event', newMeeting, $spinner.hide)`
      *
-     * @api public
+     * @integration public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @param {Function} cb   ::    callback function to call when finished [optional]
@@ -1291,7 +1291,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * e.g.
      *    `socket.post('/event/3', changedFields, $spinner.hide)`
      *
-     * @api public
+     * @integration public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @param {Function} cb   ::    callback function to call when finished [optional]
@@ -1318,7 +1318,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * e.g.
      *    `socket.patch('/event/3', changedFields, $spinner.hide)`
      *
-     * @api public
+     * @integration public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @param {Function} cb   ::    callback function to call when finished [optional]
@@ -1344,7 +1344,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * e.g.
      *    `socket.delete('/event', $spinner.hide)`
      *
-     * @api public
+     * @integration public
      * @param {String} url    ::    destination URL
      * @param {Object} data   ::    parameters to send with the request [optional]
      * @param {Function} cb   ::    callback function to call when finished [optional]
@@ -1381,7 +1381,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      * });
      * ```
      *
-     * @api public
+     * @integration public
      * @option {String} url    ::    destination URL
      * @option {Object} params ::    parameters to send with the request [optional]
      * @option {Object} headers::    headers to send with the request [optional]
@@ -1502,7 +1502,7 @@ return new(b[["Active"].concat("Object").join("X")])("Microsoft.XMLHTTP")}catch(
      *
      * Simulate HTTP over Socket.io.
      *
-     * @api private
+     * @integration private
      * @param  {[type]}   options [description]
      * @param  {Function} cb      [description]
      */

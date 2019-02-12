@@ -17,9 +17,10 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  '*': true,
-  // '*': 'isAuthorized',
-  // 'auth/register': true,
-  // 'auth/signin': true,
+  // '*': true,
+  '*': 'isAuthorized',
+  'auth/register': true,
+  'auth/signin': true,
+  'public/*': true
 
 };

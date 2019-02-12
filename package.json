@@ -14,16 +14,17 @@
     "sails-hook-grunt": "^3.1.0",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^1.5.5",
-    "sails-mongo": "^1.0.1",
-    "sails-swagger": "^0.5.1"
+    "sails-mongo": "^1.0.1"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3",
-    "swagger-ui": "^3.20.5"
+    "mocha": "^5.2.0",
+    "supertest": "^3.4.2"
   },
   "scripts": {
     "start": "node app.js",
-    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "dev": "nodemon app.js",
+    "test": "node ./node_modules/mocha/bin/mocha tests/lifecycle.test.js tests/integration/**/*.test.js",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
   },

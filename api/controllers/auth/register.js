@@ -37,7 +37,7 @@ module.exports = {
       .fetch()
       .then(async response=>{
         delete response.password;
-        response.token ='Bearer '+ await sails.helpers.signToken({id:response.id});
+        response.token = await sails.helpers.signToken({id:response.id});
         return exits.success(response, 'User Registered');
       }).catch(error=>{
         sails.log.error(error);

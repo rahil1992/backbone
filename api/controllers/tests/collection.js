@@ -1,10 +1,9 @@
 module.exports = {
-  firendlyName: 'Policy',
+  firendlyName: 'Collection',
   description: '',
   inputs: {
-    payload: {
-      type: 'ref'
-    }
+    name: {type: 'string'},
+    users: {type: 'ref'}
   },
   exits: {
     success: {
@@ -12,8 +11,10 @@ module.exports = {
     }
   },
   fn: async (inputs,exits) => {
-    console.log(this.req);
-    console.log(sails.req);
+    Project.create({
+      name: inputs.name,
+      users: inputs.users
+    })
     return exits.success(inputs)
   }
 };

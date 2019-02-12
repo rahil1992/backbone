@@ -303,7 +303,7 @@ module.exports = {
 
     /***************************************************************************
     *                                                                          *
-    * The number of milliseconds to cache static assets in production.         *
+    * The number of milliseconds to cache static fixtures in production.         *
     * (the "max-age" to include in the "Cache-Control" response header)        *
     *                                                                          *
     ***************************************************************************/

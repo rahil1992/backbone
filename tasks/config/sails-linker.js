@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         fileTmpl: '<script src="%s"></script>',
         appRoot: '.tmp/public',
         // relative: true
-        // ^^ Uncomment this if compiling assets for use in PhoneGap, CDN, etc.
+        // ^^ Uncomment this if compiling fixtures for use in PhoneGap, CDN, etc.
         //    (but be note that this can break custom font URLs)
       },
       files: {
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
         fileTmpl: '<script src="%s"></script>',
         appRoot: '.tmp/public',
         // relative: true
-        // ^^ Uncomment this if compiling assets for use in PhoneGap, CDN, etc.
+        // ^^ Uncomment this if compiling fixtures for use in PhoneGap, CDN, etc.
         //    (but be note that this can break custom font URLs)
       },
       files: {
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
         fileTmpl: '<link rel="stylesheet" href="%s">',
         appRoot: '.tmp/public',
         // relative: true
-        // ^^ Uncomment this if compiling assets for use in PhoneGap, CDN, etc.
+        // ^^ Uncomment this if compiling fixtures for use in PhoneGap, CDN, etc.
         //    (but be note that this can break custom font URLs)
       },
 
@@ -145,7 +145,7 @@ module.exports = function(grunt) {
         fileTmpl: '<link rel="stylesheet" href="%s">',
         appRoot: '.tmp/public',
         // relative: true
-        // ^^ Uncomment this if compiling assets for use in PhoneGap, CDN, etc.
+        // ^^ Uncomment this if compiling fixtures for use in PhoneGap, CDN, etc.
         //    (but be note that this can break custom font URLs)
       },
       files: {
@@ -182,7 +182,7 @@ module.exports = function(grunt) {
         fileTmpl: '<script type="text/javascript" src="%s"></script>',
         appRoot: '.tmp/public',
         // relative: true
-        // ^^ Uncomment this if compiling assets for use in PhoneGap, CDN, etc.
+        // ^^ Uncomment this if compiling fixtures for use in PhoneGap, CDN, etc.
         //    (but be note that this can break custom font URLs)
       },
       files: {

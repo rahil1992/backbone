@@ -6,7 +6,7 @@
   // across your Sails app's code base.  These rules are checked against
   // automatically any time you run `npm test`.
   // 
-  // > An additional eslintrc override file is included in the `assets/` folder
+  // > An additional eslintrc override file is included in the `fixtures/` folder
   // > right out of the box.  This is specifically to allow for variations in acceptable
   // > global variables between front-end JavaScript code designed to run in the browser
   // > vs. backend code designed to run in a Node.js/Sails process.

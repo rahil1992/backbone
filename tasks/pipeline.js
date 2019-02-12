@@ -29,7 +29,7 @@
 // CSS files to inject as <link> tags, in order.
 //
 // > Note: if you're using built-in LESS support with default settings,
-// > you'll want to change `assets/styles/importer.less` instead.
+// > you'll want to change `fixtures/styles/importer.less` instead.
 //
 var cssFilesToInject = [
 
@@ -141,7 +141,7 @@ module.exports.jsFilesToInject = jsFilesToInject.map((jsPath)=>{
 module.exports.templateFilesToInject = templateFilesToInject.map((tplPath)=>{
   // If we're ignoring the file, make sure the ! is at the beginning of the path
   if (tplPath[0] === '!') {
-    return require('path').join('!assets/', tplPath.substr(1));
+    return require('path').join('!fixtures/', tplPath.substr(1));
   }
-  return require('path').join('assets/', tplPath);
+  return require('path').join('fixtures/', tplPath);
 });

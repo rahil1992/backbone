@@ -3,7 +3,7 @@
  *
  * ---------------------------------------------------------------
  *
- * Synchronize files from the `assets` folder to `.tmp/public`,
+ * Synchronize files from the `fixtures` folder to `.tmp/public`,
  * smashing anything that's already there.
  *
  * For more information, see:
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
   grunt.config.set('sync', {
     dev: {
       files: [{
-        cwd: './assets',
+        cwd: './fixtures',
         src: ['**/*.!(coffee|less)'],
         dest: '.tmp/public'
       }]

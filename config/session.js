@@ -26,7 +26,7 @@ module.exports.session = {
   * Customize when built-in session support will be skipped.                 *
   *                                                                          *
   * (Useful for performance tuning; particularly to avoid wasting cycles on  *
-  * session management when responding to simple requests for static assets, *
+  * session management when responding to simple requests for static fixtures, *
   * like images or stylesheets.)                                             *
   *                                                                          *
   * https://sailsjs.com/config/session                                       *
