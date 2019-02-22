@@ -21,8 +21,7 @@ module.exports = {
       required: true
     },
     department: {
-      type: 'string',
-      required: true
+      type: 'string'
     }
   },
   exits: {
