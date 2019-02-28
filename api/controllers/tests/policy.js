@@ -12,8 +12,6 @@ module.exports = {
     }
   },
   fn: async (inputs,exits) => {
-    console.log(this.req);
-    console.log(sails.req);
     return exits.success(inputs)
   }
 };

@@ -23,11 +23,7 @@ module.exports= {
     inputs.file.upload({
       dirname: '../../uploads/'
     },(error,file)=>{
-      // console.log({error,file});
       if(error) return exits.fails(error);
-      console.log(file[0].fd);
-      console.log(file[0]);
-      // return exits.success(file[0])
       Media.create({
         fd: file[0].fd,
         size: file[0].size,
