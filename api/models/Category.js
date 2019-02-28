@@ -2,7 +2,8 @@ module.exports = {
   attributes: {
     name: {
       type: 'string',
-      required: true
+      required: true,
+      unique: true
     },
     parentCategory: {
       model: 'Category'

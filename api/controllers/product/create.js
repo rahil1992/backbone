@@ -1,17 +1,21 @@
 module.exports= {
-  friendlyName: "Create New Category",
-  description: 'To create category',
+  friendlyName: "Create New product",
+  description: 'Create New product',
   inputs: {
     name: {
       type:'string',
       required: true
     },
-    parentCategory: {
+    price: {
+      type: 'number'
+    },
+    category: {
       type: 'string'
     },
-    media: {
+    description: {
       type: 'string'
     },
+
   },
   exits: {
     success: {
@@ -28,14 +32,11 @@ module.exports= {
     }
   },
   fn: async (inputs,exits) => {
-    Category.create({
-      name: inputs.name,
-      parentCategory: inputs.parentCategory,
-      media: inputs.media
-    }).fetch().then(post=>{
-      return exits.success(post)
+    Product.create(inputs).fetch().then(product=>{
+      return exits.success(product)
     }).catch(error=>{
       return exits.fails(error.message, error)
     })
   }
+
 };
