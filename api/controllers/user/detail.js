@@ -18,7 +18,6 @@ module.exports = {
     }
   },
   fn: async (inputs,exits) => {
-    console.log(inputs);
     let user = await User.findOne({id: inputs.payload.id}).populateAll();
     delete user.password;
     return exits.success(user)
